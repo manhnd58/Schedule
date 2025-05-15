@@ -1,0 +1,230 @@
+        <!-- Lịch Học -->
+<section id="schedule" class="tab-content">
+  <h2>Lịch Học Của Bạn</h2>
+  <div class="schedule-container">
+    <!-- Monthly Calendar -->
+    <div class="calendar-card">
+      <div class="calendar-header">
+        <h3 id="currentMonth">Tháng 8, 2023</h3>
+        <div class="calendar-nav">
+          <button aria-label="Previous Month"><i class="fas fa-chevron-left"></i></button>
+          <button aria-label="Next Month"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="calendar-body-wrapper">
+        <div class="calendar-body">
+          <div class="calendar-day header">CN</div>
+          <div class="calendar-day header">T2</div>
+          <div class="calendar-day header">T3</div>
+          <div class="calendar-day header">T4</div>
+          <div class="calendar-day header">T5</div>
+          <div class="calendar-day header">T6</div>
+          <div class="calendar-day header">T7</div>
+          <!-- Example days -->
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day">1</div>
+          <div class="calendar-day">2</div>
+          <div class="calendar-day">3</div>
+          <div class="calendar-day has-events">4</div>
+          <div class="calendar-day">5</div>
+          <div class="calendar-day">6</div>
+          <div class="calendar-day">7</div>
+          <div class="calendar-day today has-events">8</div>
+          <div class="calendar-day">9</div>
+          <div class="calendar-day">10</div>
+          <div class="calendar-day has-events">11</div>
+          <div class="calendar-day">12</div>
+          <div class="calendar-day">13</div>
+          <div class="calendar-day">14</div>
+          <div class="calendar-day">15</div>
+          <div class="calendar-day">16</div>
+          <div class="calendar-day">17</div>
+          <div class="calendar-day">18</div>
+          <div class="calendar-day">19</div>
+          <div class="calendar-day">20</div>
+          <div class="calendar-day">21</div>
+          <div class="calendar-day">22</div>
+          <div class="calendar-day">23</div>
+          <div class="calendar-day">24</div>
+          <div class="calendar-day">25</div>
+          <div class="calendar-day">26</div>
+          <div class="calendar-day">27</div>
+          <div class="calendar-day">28</div>
+          <div class="calendar-day">29</div>
+          <div class="calendar-day">30</div>
+          <div class="calendar-day">31</div>
+        </div>
+      </div>
+      <div class="calendar-footer">
+        <div class="calendar-legend">
+          <div class="legend-item"><span class="dot learned"></span> Đã học</div>
+          <div class="legend-item"><span class="dot planned"></span> Dự kiến</div>
+          <div class="legend-item"><span class="dot today"></span> Hôm nay</div>
+        </div>
+      </div>
+      <div class="calendar-actions">
+        <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#addActivityModal">Thêm Hoạt Động</button>
+      </div>
+    </div>
+
+    <!-- Daily Timeline -->
+    <div class="timeline-card">
+      <div class="timeline-header">
+        <h3>Thứ Ba, 8 tháng 8, 2023 <span class="badge today-badge">Hôm nay</span></h3>
+      </div>
+      <div class="schedule-timeline-wrapper">
+        <div class="schedule-timeline">
+          <div class="timeline-hours">
+            <div class="timeline-hour">6:00</div>
+            <div class="timeline-hour">7:00</div>
+            <div class="timeline-hour">8:00</div>
+            <div class="timeline-hour">9:00</div>
+            <div class="timeline-hour">10:00</div>
+            <div class="timeline-hour">11:00</div>
+            <div class="timeline-hour">12:00</div>
+            <div class="timeline-hour">13:00</div>
+            <div class="timeline-hour">14:00</div>
+            <div class="timeline-hour">15:00</div>
+            <div class="timeline-hour">16:00</div>
+            <div class="timeline-hour">17:00</div>
+            <div class="timeline-hour">18:00</div>
+            <div class="timeline-hour">19:00</div>
+            <div class="timeline-hour">20:00</div>
+            <div class="timeline-hour">21:00</div>
+            <div class="timeline-hour">22:00</div>
+          </div>
+          <!-- Example Events -->
+          <div class="schedule-event learning" style="top: 60px; height: 60px;">
+            <div class="event-content">
+              <div class="event-header">
+                <h4>Học từ mới - Thức ăn</h4>
+                <span class="event-time">8:00 - 9:00</span>
+              </div>
+              <p class="event-description">Học 10 từ vựng về chủ đề Thức ăn</p>
+              <div class="event-actions">
+                <button class="edit-event" aria-label="Edit Event"><i class="fas fa-edit"></i></button>
+                <button class="delete-event" aria-label="Delete Event"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-event review" style="top: 180px; height: 60px;">
+            <div class="event-content">
+              <div class="event-header">
+                <h4>Ôn tập - Động vật</h4>
+                <span class="event-time">10:00 - 11:00</span>
+              </div>
+              <p class="event-description">Ôn lại 15 từ vựng về Động vật</p>
+              <div class="event-actions">
+                <button class="edit-event" aria-label="Edit Event"><i class="fas fa-edit"></i></button>
+                <button class="delete-event" aria-label="Delete Event"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Adding more events to demonstrate scrolling -->
+          <div class="schedule-event quiz" style="top: 300px; height: 60px;">
+            <div class="event-content">
+              <div class="event-header">
+                <h4>Làm Quiz - Du lịch</h4>
+                <span class="event-time">12:00 - 12:30</span>
+              </div>
+              <p class="event-description">Làm bài kiểm tra 10 câu về Du lịch</p>
+              <div class="event-actions">
+                <button class="edit-event" aria-label="Edit Event"><i class="fas fa-edit"></i></button>
+                <button class="delete-event" aria-label="Delete Event"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-event game" style="top: 420px; height: 60px;">
+            <div class="event-content">
+              <div class="event-header">
+                <h4>Chơi Hangman</h4>
+                <span class="event-time">14:00 - 14:30</span>
+              </div>
+              <p class="event-description">Chơi trò chơi đoán từ</p>
+              <div class="event-actions">
+                <button class="edit-event" aria-label="Edit Event"><i class="fas fa-edit"></i></button>
+                <button class="delete-event" aria-label="Delete Event"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Activity Modal (unchanged) -->
+  <div class="modal fade" id="addActivityModal" tabindex="-1" aria-labelledby="addActivityModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="addActivityModalLabel"><i class="fas fa-calendar-plus"></i> Thêm Hoạt Động Học Tập</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <form id="addActivityForm">
+            <div class="form-group">
+              <label for="activityTitle">Tiêu đề <span class="required">*</span></label>
+              <input type="text" id="activityTitle" class="form-control" placeholder="Nhập tiêu đề hoạt động" required>
+            </div>
+            <div class="form-group">
+              <label for="activityType">Loại hoạt động</label>
+              <select id="activityType" class="form-control">
+                <option value="learning">Học từ mới</option>
+                <option value="review">Ôn tập</option>
+                <option value="quiz">Làm quiz</option>
+                <option value="game">Chơi game học từ</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="activityDate">Ngày <span class="required">*</span></label>
+                <input type="date" id="activityDate" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="startTime">Thời gian bắt đầu <span class="required">*</span></label>
+                <input type="time" id="startTime" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="endTime">Thời gian kết thúc <span class="required">*</span></label>
+                <input type="time" id="endTime" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="activityCategory">Danh mục</label>
+              <select id="activityCategory" class="form-control">
+                <option value="normal">Bình thường</option>
+                <option value="important">Quan trọng</option>
+                <option value="urgent">Khẩn cấp</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="activityDescription">Mô tả</label>
+              <textarea id="activityDescription" class="form-control" rows="3" placeholder="Mô tả chi tiết về hoạt động"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Thông báo nhắc nhở</label>
+              <div class="option-group">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="notificationToggle">
+                  <span class="slider round"></span>
+                </label>
+                <span>Bật thông báo</span>     
+              </div>
+              <select id="notificationTime" class="form-control mt-2" disabled>
+                <option value="5">5 phút trước</option>
+                <option value="15">15 phút trước</option>
+                <option value="30">30 phút trước</option>
+                <option value="60">1 giờ trước</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" data-bs-dismiss="modal">Hủy</button>
+          <button type="button" class="btn-primary" id="saveActivityBtn">Lưu hoạt động</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
